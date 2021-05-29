@@ -1,0 +1,115 @@
+@import "ewright-me/scss/_variables.scss";
+
+body,
+html,
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100% !important;
+}
+a {
+  color: $accent;
+}
+
+.header-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+  background: $header-bg;
+}
+.header-column.h-100 {
+  height: auto !important;
+}
+.my-pic {
+  position: relative;
+}
+
+.my-logo {
+  position: absolute;
+  bottom: -25%;
+  left: 25%;
+  width: 50%;
+}
+
+.tab-content {
+  margin-bottom: 192px !important;
+}
+
+.nav-pills .nav-link {
+  color: $text;
+  border-bottom: 1px solid $nav-pill-active;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: $nav-pill-active;
+  border-bottom: 4px solid $accent;
+  border-radius: 0;
+  color: $text;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $nav-pill-active !important;
+}
+
+.btn {
+  border-radius: 2px;
+  border: 1px solid $accent;
+  &:hover {
+    background: $accent-hover;
+    border: 1px solid $accent;
+  }
+}
+
+.btn-primary {
+  background: $accent;
+}
+
+.btn-outline-primary {
+  color: $accent;
+}
+
+.header-image {
+  max-width: 100%;
+  height: 200px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+@media (min-width: 576px) {
+  .header-column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    border-right: 4px solid $accent;
+    border-bottom: none;
+  }
+  button {
+    display: block;
+    width: 100%;
+  }
+
+  .header-image {
+    max-width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-column.h-100 {
+    height: 100% !important;
+  }
+
+  .tab-content {
+    margin-bottom: 0 !important;
+  }
+}

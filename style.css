@@ -1,0 +1,132 @@
+body,
+html,
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100% !important;
+}
+
+a {
+  color: #c31432;
+}
+
+.header-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+  background: #e6e3e8;
+}
+
+.header-column.h-100 {
+  height: auto !important;
+}
+
+.my-pic {
+  position: relative;
+}
+
+.my-logo {
+  position: absolute;
+  bottom: -25%;
+  left: 25%;
+  width: 50%;
+}
+
+.tab-content {
+  margin-bottom: 192px !important;
+}
+
+.nav-pills .nav-link {
+  color: #150205;
+  border-bottom: 1px solid #cec8d2;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background: #cec8d2;
+  border-bottom: 4px solid #c31432;
+  border-radius: 0;
+  color: #150205;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #cec8d2 !important;
+}
+
+.btn {
+  border-radius: 2px;
+  border: 1px solid #c31432;
+}
+
+.btn:hover {
+  background: #820d21;
+  border: 1px solid #c31432;
+}
+
+.btn-primary {
+  background: #c31432;
+}
+
+.btn-outline-primary {
+  color: #c31432;
+}
+
+.header-image {
+  max-width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (min-width: 576px) {
+  .header-column {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    border-right: 4px solid #c31432;
+    border-bottom: none;
+  }
+  button {
+    display: block;
+    width: 100%;
+  }
+  .header-image {
+    max-width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-column.h-100 {
+    height: 100% !important;
+  }
+  .tab-content {
+    margin-bottom: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
