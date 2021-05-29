@@ -1,4 +1,4 @@
-@import "ewright-me/scss/_variables.scss";
+@import "./scss/_variables.scss";
 
 body,
 html,
@@ -23,13 +23,6 @@ a {
 }
 .my-pic {
   position: relative;
-}
-
-.my-logo {
-  position: absolute;
-  bottom: -25%;
-  left: 25%;
-  width: 50%;
 }
 
 .tab-content {

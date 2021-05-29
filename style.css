@@ -38,13 +38,6 @@ a {
   position: relative;
 }
 
-.my-logo {
-  position: absolute;
-  bottom: -25%;
-  left: 25%;
-  width: 50%;
-}
-
 .tab-content {
   margin-bottom: 192px !important;
 }
