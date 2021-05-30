@@ -26,6 +26,7 @@ a {
 }
 
 .tab-content {
+  width: 100% !important;
   margin-bottom: 192px !important;
 }
 
@@ -74,6 +75,7 @@ a {
     object-position: center;
   }
 }
+
 @media (min-width: 576px) {
   .header-column {
     position: fixed;
@@ -102,7 +104,26 @@ a {
     height: 100% !important;
   }
 
+  .main-pane {
+    width: 720px;
+    margin-left: 304px !important;
+  }
+
   .tab-content {
     margin-bottom: 0 !important;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-pane {
+    width: 930px;
+    margin-left: 234px !important;
+  }
+}
+@media (min-width: 1200px) {
+  .main-pane {
+    width: 1480px;
+    margin-left: 324px !important;
   }
 }
