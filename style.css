@@ -93,6 +93,24 @@ a {
      object-position: center;
 }
 
+ul.list-group,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+li.list-group-item {
+  padding: 0.5em 0;
+}
+
+li.list-group-item .bi-check-circle {
+  color: #b6adbc;
+}
+
+span.bi.bi-check-circle {
+  margin-right: 1em !important;
+}
+
 @media (min-width: 576px) {
   .header-column {
     position: fixed;
@@ -136,7 +154,7 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .main-pane {
     width: 1480px;
     margin-left: 324px !important;

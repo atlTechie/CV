@@ -76,6 +76,24 @@ a {
   }
 }
 
+ul.list-group,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+li.list-group-item {
+  padding: 0.5em 0;
+}
+
+li.list-group-item .bi-check-circle {
+  color: $list-icons;
+}
+
+span.bi.bi-check-circle {
+  margin-right: 1em !important;
+}
+
 @media (min-width: 576px) {
   .header-column {
     position: fixed;
@@ -121,7 +139,7 @@ a {
     margin-left: 234px !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .main-pane {
     width: 1480px;
     margin-left: 324px !important;
