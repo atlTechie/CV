@@ -14,16 +14,9 @@ main {
 }
 
 body {
-  background: $white;
-  
-  &:before{
-    content: '';
-    background-image: url("../images/top-corner-bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top:0;
-  }
+  background-image: url('../images/spikes.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 h1,
 h2 h3,
@@ -57,6 +50,9 @@ a {
 .nav-pills .nav-link {
   color: $text;
   border-bottom: 1px solid $nav-pill-active;
+  span.small{
+    font-size: .7rem;
+  }
 }
 
 .nav-pills .nav-link.active,
