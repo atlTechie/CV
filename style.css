@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Jost:wght@300;500&display=swap");
+.design-list li.list-group-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body,
 html,
 main {
@@ -9,6 +16,21 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100% !important;
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: #410610;
+  background-image: url("../images/top-corner-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2 h3,
+h4 {
+  font-family: "Cinzel", Georgia, "Times New Roman", Times, serif;
 }
 
 a {
@@ -41,6 +63,7 @@ a {
 .tab-content {
   width: 100% !important;
   margin-bottom: 192px !important;
+  background: #fff;
 }
 
 .nav-pills .nav-link {
