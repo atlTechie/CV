@@ -49,7 +49,7 @@ a {
 
 .nav-pills .nav-link {
   color: $text;
-  border-bottom: 1px solid $nav-pill-active;
+  
   span.small{
     font-size: .65rem;
   }
@@ -61,7 +61,7 @@ a {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background: $nav-pill-active;
-  border-bottom: 4px solid $accent;
+  border-bottom: 2px solid $accent;
   border-radius: 0;
   color: $text;
 }
@@ -118,6 +118,27 @@ span.bi.bi-check-circle {
 }
 
 @media (min-width: 576px) {
+
+
+  
+ 
+
+
+
+
+
+  button {
+    display: block;
+    width: 100%;
+  }
+
+  .header-image {
+    max-width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
   .header-column {
     position: fixed;
     top: 0;
@@ -125,10 +146,18 @@ span.bi.bi-check-circle {
     bottom: 0;
   }
 
-  
+  .header-column.h-100 {
+    height: 100% !important;
+  }
+
+  .main-pane {
+    width: 720px;
+    margin-left: 304px !important;
+  }
   .nav-pills .nav-link {
     border-left: 0;
     border-radius:0;
+    border-bottom: 1px solid $nav-pill-active;
     text-align: left!important;
     span.bi{
       display: inline;
@@ -147,31 +176,6 @@ span.bi.bi-check-circle {
 
  background-image: linear-gradient(to right, $nav-pill-active, $header-bg);
 }
-
-
-
-
-
-  button {
-    display: block;
-    width: 100%;
-  }
-
-  .header-image {
-    max-width: 100%;
-    height: 400px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header-column.h-100 {
-    height: 100% !important;
-  }
-
-  .main-pane {
-    width: 720px;
-    margin-left: 304px !important;
-  }
 
   .tab-content {
     margin-bottom: 0 !important;
