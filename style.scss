@@ -53,6 +53,9 @@ a {
   span.small{
     font-size: .7rem;
   }
+  span.bi{
+    display: block;
+  }
 }
 
 .nav-pills .nav-link.active,
@@ -121,11 +124,24 @@ span.bi.bi-check-circle {
     left: 0;
     bottom: 0;
   }
+
+  .nav-pills .nav-link {
+    border-left: 1px solid $nav-pill-active;
+   
+    span.bi{
+      display: inline;
+      
+    }
+  }
+
+
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
     border-right: 4px solid $accent;
     border-bottom: none;
   }
+
+
   button {
     display: block;
     width: 100%;
