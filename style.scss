@@ -117,6 +117,20 @@ span.bi.bi-check-circle {
   margin-right: 1em !important;
 }
 
+
+
+.current-work-breakdown{
+  .section{
+    border-right: 1px solid $header-bg;
+    &:last-child{
+      border-right: none;
+    }
+  }
+.bi{
+  font-size: 2rem;
+} 
+}
+
 @media (min-width: 576px) {
 
 
