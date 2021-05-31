@@ -125,21 +125,31 @@ span.bi.bi-check-circle {
     bottom: 0;
   }
 
+  
   .nav-pills .nav-link {
-    border-left: 1px solid $nav-pill-active;
-   
+    border-left: 0;
+    border-radius:0;
+    text-align: left!important;
     span.bi{
       display: inline;
+      margin-right:10px!important;
       
     }
   }
 
-
   .nav-pills .nav-link.active,
-  .nav-pills .show > .nav-link {
-    border-right: 4px solid $accent;
-    border-bottom: none;
-  }
+.nav-pills .show > .nav-link {
+  background: $nav-pill-active;
+  border-left: 2px solid $accent;
+  border-right: none;
+  border-bottom: none;
+ color:$accent;
+
+ background-image: linear-gradient(to right, $nav-pill-active, $header-bg);
+}
+
+
+
 
 
   button {
