@@ -138,6 +138,13 @@ span.bi.bi-check-circle {
   }
 }
 
+@media (min-width: 768px){
+  .nav-pills .nav-link {
+    span.small{
+    font-size: .9rem;
+  }}
+}
+
 @media (min-width: 1024px) {
   .header-column {
     position: fixed;
