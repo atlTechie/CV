@@ -14,10 +14,16 @@ main {
 }
 
 body {
-  background: $accent-dark-60;
-  background-image: url("../images/top-corner-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: $white;
+  
+  &:before{
+    content: '';
+    background-image: url("../images/top-corner-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+  }
 }
 h1,
 h2 h3,
@@ -159,7 +165,13 @@ span.bi.bi-check-circle {
 }
 @media (min-width: 1400px) {
   .main-pane {
-    width: 1480px;
+    width: 1120px;
+    margin-left: 264px !important;
+  }
+}
+@media (min-width: 1500px) {
+  .main-pane {
+    width: 1280px;
     margin-left: 324px !important;
   }
 }
