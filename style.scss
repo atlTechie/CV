@@ -120,6 +120,7 @@ span.bi.bi-check-circle {
 
 
 .current-work-breakdown{
+  background: lighten($accent, 30% );
   .section{
     border-right: 1px solid $header-bg;
     &:last-child{
