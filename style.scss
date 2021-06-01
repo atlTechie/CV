@@ -14,7 +14,7 @@ main {
 }
 
 body {
-  background-image: url('../images/spikes.png');
+  background-image: url("../images/spikes.png");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -49,11 +49,11 @@ a {
 
 .nav-pills .nav-link {
   color: $text;
-  
-  span.small{
-    font-size: .65rem;
+
+  span.small {
+    font-size: 0.65rem;
   }
-  span.bi{
+  span.bi {
     display: block;
   }
 }
@@ -115,33 +115,28 @@ li.list-group-item .bi-check-circle {
 
 span.bi.bi-check-circle {
   margin-right: 1em !important;
+  color: $list-icons;
 }
 
-
-
-.current-work-breakdown{
-  background: lighten($accent, 30% );
-  .section{
+.current-work-breakdown {
+  .section {
     border-right: 1px solid $header-bg;
-    &:last-child{
+    background: lighten($accent, 55%);
+    padding-top: 2em;
+    &:last-child {
       border-right: none;
     }
   }
-.bi{
-  font-size: 2rem;
-} 
+  .bi {
+    font-size: 2rem;
+    color: $accent;
+  }
+  li.list-group-item {
+    background: transparent;
+  }
 }
 
 @media (min-width: 576px) {
-
-
-  
- 
-
-
-
-
-
   button {
     display: block;
     width: 100%;
@@ -153,11 +148,12 @@ span.bi.bi-check-circle {
   }
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .nav-pills .nav-link {
-    span.small{
-    font-size: .9rem;
-  }}
+    span.small {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -178,26 +174,25 @@ span.bi.bi-check-circle {
   }
   .nav-pills .nav-link {
     border-left: 0;
-    border-radius:0;
+    border-radius: 0;
     border-bottom: 1px solid $nav-pill-active;
-    text-align: left!important;
-    span.bi{
+    text-align: left !important;
+    span.bi {
       display: inline;
-      margin-right:10px!important;
-      
+      margin-right: 10px !important;
     }
   }
 
   .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  background: $nav-pill-active;
-  border-left: 2px solid $accent;
-  border-right: none;
-  border-bottom: none;
- color:$accent;
+  .nav-pills .show > .nav-link {
+    background: $nav-pill-active;
+    border-left: 2px solid $accent;
+    border-right: none;
+    border-bottom: none;
+    color: $accent;
 
- background-image: linear-gradient(to right, $nav-pill-active, $header-bg);
-}
+    background-image: linear-gradient(to right, $nav-pill-active, $header-bg);
+  }
 
   .tab-content {
     margin-bottom: 0 !important;

@@ -70,7 +70,7 @@ a {
 }
 
 .nav-pills .nav-link span.small {
-  font-size: .65rem;
+  font-size: 0.65rem;
 }
 
 .nav-pills .nav-link span.bi {
@@ -138,10 +138,13 @@ li.list-group-item .bi-check-circle {
 
 span.bi.bi-check-circle {
   margin-right: 1em !important;
+  color: #b6adbc;
 }
 
 .current-work-breakdown .section {
   border-right: 1px solid #e6e3e8;
+  background: #fef2f4;
+  padding-top: 2em;
 }
 
 .current-work-breakdown .section:last-child {
@@ -150,6 +153,11 @@ span.bi.bi-check-circle {
 
 .current-work-breakdown .bi {
   font-size: 2rem;
+  color: #c31432;
+}
+
+.current-work-breakdown li.list-group-item {
+  background: transparent;
 }
 
 @media (min-width: 576px) {
@@ -165,7 +173,7 @@ span.bi.bi-check-circle {
 
 @media (min-width: 768px) {
   .nav-pills .nav-link span.small {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
