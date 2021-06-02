@@ -3,3 +3,21 @@
     display: flex;
   }
 }
+
+.current-work-breakdown {
+  .section {
+    border-right: 1px solid $header-bg;
+    background: $accent-light;
+    padding-top: 2em;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .bi {
+    font-size: 2rem;
+    color: $accent;
+  }
+  li.list-group-item {
+    background: transparent;
+  }
+}

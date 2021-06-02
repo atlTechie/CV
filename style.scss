@@ -2,6 +2,7 @@
 
 @import "./scss/_variables.scss";
 @import "./scss/_about.scss";
+@import "./scss/_home.scss";
 
 body,
 html,
@@ -36,9 +37,6 @@ a {
 }
 .header-column.h-100 {
   height: auto !important;
-}
-.my-pic {
-  position: relative;
 }
 
 .tab-content {
@@ -91,6 +89,7 @@ a {
   max-width: 100%;
   height: 200px;
   overflow: hidden;
+  margin-bottom: 1rem;
   img {
     width: 100%;
     height: 100%;
@@ -116,24 +115,6 @@ li.list-group-item .bi-check-circle {
 span.bi.bi-check-circle {
   margin-right: 1em !important;
   color: $list-icons;
-}
-
-.current-work-breakdown {
-  .section {
-    border-right: 1px solid $header-bg;
-    background: lighten($accent, 55%);
-    padding-top: 2em;
-    &:last-child {
-      border-right: none;
-    }
-  }
-  .bi {
-    font-size: 2rem;
-    color: $accent;
-  }
-  li.list-group-item {
-    background: transparent;
-  }
 }
 
 @media (min-width: 576px) {

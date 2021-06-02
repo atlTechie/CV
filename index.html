@@ -28,10 +28,10 @@
             <div class="navigation"> 
               <ul class="nav nav-pills mb-3 justify-content-end flex-lg-column mx-lg-auto" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false"> <span class="bi bi-house"></span><span class="small">Home</span></button>
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="false"> <span class="bi bi-house"></span><span class="small">Home</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="true"> <span class="bi bi-person"></span><span class="small">About</span></button>
+                  <button class="nav-link" id="pills-about-tab" data-bs-toggle="pill" data-bs-target="#pills-about" type="button" role="tab" aria-controls="pills-about" aria-selected="true"> <span class="bi bi-person"></span><span class="small">About</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="pills-portfolio-tab" data-bs-toggle="pill" data-bs-target="#pills-portfolio" type="button" role="tab" aria-controls="pills-portfolio" aria-selected="false"> <span class="bi bi-briefcase"></span><span class="small">Portfolio</span></button>
@@ -52,21 +52,25 @@
       </div>
       <div class="col-12 col-lg-9 col-lg-10 offset-lg-3 ms-sm-auto main-pane">
         <div class="tab-content p-3 shadow-lg my-auto" id="pills-tabContent">
-          <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> 
             <div class="row justify-content-center">
-              <div class="col-12 col-lg-10 col-xl-6">
-                <div class="header-image"><img class="img-fluid" src="./images/cali.png" alt=""></div>
-              </div>
-            </div>
-            <div class="row mt-4 justify-content-center">
-              <div class="col-12 col-lg-10 col-xl-6">
+              <div class="col-12 col-xl-8">
+                <div class="header-image"><img class="img-fluid" src="./images/header-home.jpg" alt=""></div>
                 <h1 class="h4">Excuse our progress, but while you wait...</h1>
                 <p> Let me introduce myself - I'm Cali and I'm the real brains behind this UI design and development thing E does. Well, she's been doing it longer than I've been alive, but I still give her a lot of great ideas. My brother Calvin helps us sometimes, but he's told me he prefers to sunbathe on the balcony while 'we' do all the work. SMH.</p>
                 <p>I'll admit that my English isn't that great - yet. However, from what I've been able to pick up while eavesdropping on E's work calls, she's working with some things called Bootstrap, Wordpress, PHP, Javascript (she cursed about that one a LOT), design thinking and ideation, along with a few other things, but you'll have to speak with her yourself about it.</p>
               </div>
+              <div class="col-12 col-xl-4 d-flex flex-column flex-md-row flex-xxl-column"> 
+                <div class="latest-work-item d-block p-3 mb-3">
+                  <h2>Latest Work</h2><img class="img-fluid" src="./images/header-home.jpg" alt=""><a href="#">Lorem ipsum dolor sit amet. </a>
+                </div>
+                <div class="latest-blog-item d-block p-3 mb-3">
+                  <h2>Latest Video</h2><img class="img-fluid" src="./images/header-home.jpg" alt=""><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas excepturi eligendi placeat!</a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="tab-pane fade show active" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab"> 
+          <div class="tab-pane fade" id="pills-about" role="tabpanel" aria-labelledby="pills-about-tab"> 
             <div class="row justify-content-center">
               <div class="col-12">
                 <div class="header-image"><img class="img-fluid" src="./images/cali.png" alt="My cat Cali"></div>

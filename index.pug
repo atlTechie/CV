@@ -32,12 +32,12 @@ body
                         .navigation 
                             ul#pills-tab.nav.nav-pills.mb-3.justify-content-end.flex-lg-column.mx-lg-auto(role='tablist')
                                 li.nav-item(role='presentation')
-                                    button#pills-home-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-home' type='button' role='tab' aria-controls='pills-home' aria-selected='false') 
+                                    button#pills-home-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-home' type='button' role='tab' aria-controls='pills-home' aria-selected='false') 
                                         span.bi.bi-house
                                         span.small Home
                                     
                                 li.nav-item(role='presentation')
-                                    button#pills-about-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-about' type='button' role='tab' aria-controls='pills-about' aria-selected='true') 
+                                    button#pills-about-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-about' type='button' role='tab' aria-controls='pills-about' aria-selected='true') 
                                         span.bi.bi-person
                                         span.small About
                                 li.nav-item(role='presentation')
@@ -58,9 +58,9 @@ body
                         
             .col-12.col-lg-9.col-lg-10.offset-lg-3.ms-sm-auto.main-pane
                 #pills-tabContent.tab-content.p-3.shadow-lg.my-auto
-                    #pills-home.tab-pane.fade(role='tabpanel' aria-labelledby='pills-home-tab') 
+                    #pills-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-home-tab') 
                         include ./includes/home.pug
-                    #pills-about.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-about-tab') 
+                    #pills-about.tab-pane.fade(role='tabpanel' aria-labelledby='pills-about-tab') 
                         include ./includes/about.pug
                     #pills-quotes.tab-pane.fade(role='tabpanel' aria-labelledby='pills-quotes-tab') 
                         include ./includes/quotes.pug

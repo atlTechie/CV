@@ -5,6 +5,35 @@
   display: flex;
 }
 
+.current-work-breakdown .section {
+  border-right: 1px solid #e6e3e8;
+  background: #fef2f4;
+  padding-top: 2em;
+}
+
+.current-work-breakdown .section:last-child {
+  border-right: none;
+}
+
+.current-work-breakdown .bi {
+  font-size: 2rem;
+  color: #c31432;
+}
+
+.current-work-breakdown li.list-group-item {
+  background: transparent;
+}
+
+.latest-work-item,
+.latest-blog-item {
+  background: #fef2f4;
+}
+
+.latest-work-item img,
+.latest-blog-item img {
+  margin-bottom: 1rem;
+}
+
 body,
 html,
 main {
@@ -53,10 +82,6 @@ a {
 
 .header-column.h-100 {
   height: auto !important;
-}
-
-.my-pic {
-  position: relative;
 }
 
 .tab-content {
@@ -111,6 +136,7 @@ a {
   max-width: 100%;
   height: 200px;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .header-image img {
@@ -139,25 +165,6 @@ li.list-group-item .bi-check-circle {
 span.bi.bi-check-circle {
   margin-right: 1em !important;
   color: #b6adbc;
-}
-
-.current-work-breakdown .section {
-  border-right: 1px solid #e6e3e8;
-  background: #fef2f4;
-  padding-top: 2em;
-}
-
-.current-work-breakdown .section:last-child {
-  border-right: none;
-}
-
-.current-work-breakdown .bi {
-  font-size: 2rem;
-  color: #c31432;
-}
-
-.current-work-breakdown li.list-group-item {
-  background: transparent;
 }
 
 @media (min-width: 576px) {
